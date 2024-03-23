@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photosynthesis & Cellular Respiration</title>
+
+    <!--syling presets-->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: black;
+            font-family: Arial;
+        }
+
+        .flexRow {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .flexCol {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        dfn {
+            cursor: pointer;
+            font-weight: bolder;
+            color: black;
+        }
+      
+    </style>
+
+    <!--END OF HEAD-->
+</head>
+<body>
+    <!--start screen will go in between these comments-->
+    <div id="startScreen" style="width: 100%; height: 46.875rem; background-color: rgb(0, 0, 42)">
+        <div id="startScreenContainer"> <style> #startScreenContainer {display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); width: 100%; height: 100%;}</style>
+
+            <div id="startTitle" class="flexCol"> <style>#startTitle {grid-column: 1/3; grid-row: 1/3; margin: 3.125rem; padding: 3.125rem; background-color: cornsilk; border: 5px solid paleturquoise; border-radius: 1.25rem; text-align: center; transition: ease .2s;} #startTitle:hover {margin: 2.5rem; transition: ease .2s;}</style>
+                <p style="font-size: 4rem; font-weight: bolder; color: rgb(0, 0, 42);">Photosynthesis & Cellular Respiration</p>
+                <button id="btn" onclick="btnScroll()">Begin Guide</button> <style>#startTitle button {cursor: pointer; width: 50%; margin-top: 2.5rem; padding: 1.25rem; border: 5px solid rgb(0, 0, 42); border-radius: 2.8rem; font-size: 1.875rem; font-weight: bolder; background-color: rgb(0, 0, 42); color: cornsilk; transition: .3s;} #startTitle button:hover {background-color: cornsilk; border: 5px solid rgb(0, 0, 42); color: rgb(0, 0, 42); transition: .3s;}</style>
+                <script>const btn = document.getElementById("btn"); function btnScroll() {window.scrollTo({left: 0, top: 760, behavior: "smooth",})}</script>
+            </div>
+
+            <div id="signature" class="flexCol"><style>#signature {grid-column: 1/3; grid-row: 3/3; margin: 0 3.125rem 3.125rem 3.125rem; padding: 3.125rem; border: 5px solid mediumaquamarine; border-radius: 1.25rem; text-align: center; transition: ease .2s;} #signature:hover {margin: 0 2.5rem 2.5rem 2.5rem; transition: ease .2s}</style>
+                <p style="font-size: 2rem; font-weight: bolder; color: cornsilk;">Created By Jon B & Bryan S</p>
+            </div>
+
+            <div id="startDesc" class="flexCol"> <style>#startDesc{grid-column: 3/3; grid-row: 1/4; margin: 3.125rem 3.125rem 3.125rem 0; padding: 3.125rem; background-color: cornsilk; border: 5px solid pink; border-radius: 1.25rem; text-align: center; transition: ease .2s; font-size: 1.25rem; font-weight: bolder; line-height: 2.9rem;} #startDesc:hover {margin: 2.5rem 2.5rem 2.5rem 0; padding: 3.75rem; transition: ease .2s;}</style>
+                <p style="width: 20rem; color: rgb(0, 0, 42)"><span style="font-size: 2rem; font-weight: bolder; color: rgb(0, 0, 42)">Description:</span><br><br>This is a simple guide to photosynthesis and cellular respiration. By the end of this guide, you will have a basic understanding of the two processes. To begin, click the "Begin Guide" button!</p>
+
+            </div>
+
+        </div>
+    </div>
+    <!--start screen will go in between these comments-->
+
+    <!-- main guide content-->
+    <div id="mainContent">
+
+        <!--Navigation explanation-->
+        <div id="expNav" style="background-color: cornsilk; border: 5px solid black; border-radius: 1.25rem; margin: 3.125rem 3.125rem 3.125rem 3.125rem; padding: 3.125rem;">
+            <div id="expNavTitle" class="flexRow" style="font-size: 4.7rem; font-weight: bolder; border-bottom: 5px solid rgb(0, 0, 42); padding-bottom: 1.25rem;">
+                <p style="color: rgb(0, 0, 42);">Navigation</p>
+            </div>
+            <div id="expNavCont" class="flexRow" style="margin: 5.5rem 3.5rem 3.5rem 3.5rem;">
+                <div id="expNavText" class="flexCol" style="width: 50%; font-size: 1.25rem; font-weight: bolder; line-height: 2rem;">
+                    <p style="font-size: 1.875rem; margin: 2rem; color:rgb(0, 0, 42)">Navigating this guide is easy:</p>
+                    <p>
+                        <ul>
+                            <li style="color: rgb(0, 0, 42);">scroll down to move on to the next section</li>
+                            <li style="color: rgb(0, 0, 42);">hovering over bold black text display's it's definition</li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="scrollAnim" class="flexCol" style="width: 25%;">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/d334dc22-fdd5-4d23-9a1e-8fa9d1548333/09yzYL507W.json" background="transparent" speed="1" style="width: 12.5rem; height: 12.5rem; transform: rotate(180deg);" loop autoplay></dotlottie-player>
+                </div>
+                <div id="hoverAnim" class="flexCol" style="width: 25%">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/76e7e7d1-6ed3-4486-b02c-124c3caa3768/Vsda9FuE8c.json" background="transparent" speed="1" style="width: 12.5rem; height: 12.5rem;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+        </div>
+        <!--navigation explanation-->
+
+
+
+
+
+
+
+
+    
+        <!--Photosynthesis section-->
+
+            <!--photosynthesis summary-->
+            <div id="photoSummCont" style="padding: 3.125rem 0 3.125rem 0; background-color: rgb(0, 0, 42);">
+                <div id="PhotoSummTitle" style="font-size: 4.7rem; font-weight: bolder;" class="flexRow">
+                    <p style="color: cornsilk">Photosynthesis</p>
+                </div>
+                <div id="photoCont" class="flexRow" style="margin: 3.125rem 3.125rem 0 3.125rem;">
+                    <div id="photoSummAnim" class="flexCol" style="width: 50%;">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                        <dotlottie-player src="https://lottie.host/e830ad99-af21-42db-a34b-df9bab52a4c7/fRoIp1Fjwi.json" background="transparent" speed="1" style="width: 32rem; height: 32rem;" loop autoplay></dotlottie-player>
+                    </div>
+                    <div id="photoSummText" class="flexCol" style="width: 50%; background-color: cornsilk; padding: 3.125rem; border: 5px solid mediumaquamarine; border-radius: 1.25rem; line-height: 2rem;">
+                        <p style="font-size: 1.25rem; color: rgb(0, 0, 42);"><span style="font-size: 1.875rem; font-weight: bolder; color: rgb(0, 0, 42);">Abstract:</span><br><br>Photosynthesis is like a magic trick that plants can do to make their own food. Just like humans need food to grow and stay healthy, plants also need food to survive. However, instead of going to the grocery store, plants have a special power called photosynthesis. This ability helps them make their own food using sunlight, water, and air. Humans also benefit from photosynthesis because the process produces a natural gas that we need to breathe; oxygen! Let's learn about the process of photosynthesis in more detail.</p>
+                    </div>
+                </div>
+            </div>
+            <!--photosynthesis summary-->
+
+            <!--photosynthesis equation-->
+            <div id="photosynthesisEq" style="margin: 3.125rem; padding: 3.125rem; background-color: cornsilk; border: 5px solid rgb(0, 0, 42); border-radius: 1.25rem;">
+                <div id="photoEqTitle" class="flexRow" style="font-size: 1.875rem; font-weight: bolder; justify-content: start; margin-bottom: 3.125rem">
+                    <p style="color:rgb(0, 0, 42);">Equation:</p>
+                </div>
+                <div id="photoEqCont" class="flexRow">
+                    <div id="photoEqExp" class="flexCol" style="width: 50%; font-size: 1.25rem; line-height: 2rem;">
+                        <p style="color: rgb(0, 0, 42)">The photosynthesis equation is located on the right.<br><br>Notice that the first product in the equation is <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn>. <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">Glucose</dfn> is a type of sugar. In photosynthesis, <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn> is the food that plants create. Along with <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn>, oxygen is another product. We briefly talked about both of these products previously.</p>
+                    </div>
+                    <div id="photoEq" class="flexCol" style="width: 50%; font-size: 2.8rem;">
+                        <img src="https://lh3.googleusercontent.com/proxy/-li5Noxo1as5K40qNcFO78jodj9Bq4lDW4SdKVlH9D_a1WzV0tb4IiEb7T6PT8bXHgVHQISMB-fvs8nUi2CHoyGUUHzNrAVoYiYlxmVFtJV2yqcSglPupuU8YGnxm19jLYeO80vgPqp7GTfLAGbJlps4eug9J6HNabJD" style="width: 25rem; height: 11.5rem;">
+                    </div>
+                </div>
+            </div>
+            <!--photosynthesis equation-->
+
+            <!--Light dependant reaction-->
+            <div id="LightDep" style="margin: 0 3.125rem 0rem 3.125rem; padding: 0 3.125rem 3.125rem 3.125rem;">
+                <div id="lightDepTitle" class="flexRow" style="justify-content: start; font-size: 4.7rem; font-weight: bolder;">
+                    <p style="color: rgb(0, 0, 42);">.1 Light Reaction</p>
+                </div>
+                <div id="lightDepCont" class="flexRow">
+                    <div id="lightDepText" style="width:50%; margin-top: 3.125rem; padding: 3.125rem; background-color: cornsilk; font-size: 1.25rem; line-height: 2rem; border: 5px solid rgb(0, 0, 42); border-radius: 1.25rem;">
+                        <p style="color:rgb(0, 0, 42);">There are two stages in photosynthesis; the Light dependent reaction and the light independent reaction. It's important to note that the light independent reaction is often called the “Calvin cycle”. For now, let's look at the light dependent reaction.</p><br>
+                        <p style="color:rgb(0, 0, 42);">The light dependent reaction occurs in the <dfn title="The thylakoid membrane of a chloroplast is an internal system of interconnected membranes that carry out the light reactions of photosynthesis.">thylakoid membrane</dfn> of the chloroplast. Light and water are taken in and what's produced is <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level.">ATP</dfn> and <dfn title="Nicotinamide adenine dinucleotide phosphate (NADPH) is an essential electron donor in all organisms, and provides the reducing power for anabolic reactions and redox balance.">NADPH</dfn>. These products get passed on to the next step…</p>
+                    </div>
+                    <div id="lightDepAnim" class="flexCol" style="width: 50%; padding: 3.125rem; margin-top: 3.125rem;">
+                        <img src="https://d20khd7ddkh5ls.cloudfront.net/light_reactions_of_photosynthesis.png" style="width: 30rem; height: 18rem;">
+                    </div>
+                </div>
+            </div>
+            <!--Light dependant reaction-->
+
+            <!--Calvin Cycle-->
+            <div id="calvin">
+                <div id="calvinTitle" class="flexRow">
+                    <p style="font-size: 4.7rem; font-weight: bolder; color: rgb(0, 0, 42);">.2 Light independent Reaction</p>
+                </div>
+                <div id="calvinCont" class="flexRow">
+                    <div id="calvinAnim" class="flexCol" style="width: 50%; margin: 3.125rem; padding: 3.125rem;">
+                        <img src="https://content.tinytap.it/Game-9_42F363C7-74D2-4858-81FA-72F0F054D900/unzipped%2Fphoto1%2Fphoto1phone.jpg" style="width: 550px; height: 400px;">
+                    </div>
+                    <div id="calvinExp" class="flexCol" style="width: 50%; margin: 3.125rem; padding: 3.125rem; background-color: cornsilk; font-size: 1.25rem; line-height: 2rem; border: 5px solid rgb(0, 0, 42); border-radius: 1.25rem;">
+                        <p style="color: rgb(0, 0, 42);">The light dependent reaction happens in the <dfn title="The cells and tissues that support and give structure to organs, glands, or other tissues in the body">stroma</dfn> of the <dfn title="A plastid that contains chlorophyll and in which photosynthesis takes place">chloroplast</dfn>. Carbon dioxide is taken in through pores in the plant's leaves called <dfn title="Stomata are tiny openings or pores in plant tissue that allow for gas exchange">stomata</dfn>. The <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn> from the light independent reaction is used as a power supply for this cycle. The <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn>, <dfn title="Nicotinamide adenine dinucleotide phosphate (NADPH) is an essential electron donor in all organisms, and provides the reducing power for anabolic reactions and redox balance.">NADPH</dfn>, and <dfn title="Carbon dioxide">CO2</dfn> are finally converted into <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn>.</p>
+
+                    </div>
+                </div>
+            </div>
+            <!--Calvin cycle-->
+
+        <!--photosynthesis section-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Resperation section-->
+        <div id="respiration">
+            <!--repsiration overview-->
+            <div id="respOver" style="background-color: rgb(0, 0, 42); padding: 3.125rem 0 3.125rem 0;">
+                <div id="respOverTitle" class="flexRow" style="font-size: 4.7rem; font-weight: bolder;">
+                    <p style="color: cornsilk;">Respiration</p>
+                </div>
+                <div id="respOverCont" class="flexRow" style="margin: 3.125rem 3.125rem 0 3.125rem;">
+                    <div id="respOverText" class="flexCol" style="width: 50%; font-size: 1.25rem; line-height: 2rem; padding: 3.125rem; background-color: cornsilk; border: 5px solid paleturquoise; border-radius: 1.25rem;">
+                        <p style="color: rgb(0, 0, 42);"><span style="font-size: 1.9rem; font-weight: bolder; color: rgb(0, 0, 42);">Abstract:</span><br><br>Now that you understand photosynthesis, it's time to learn about respiration. Imagine our cells as tiny factories that need fuel to keep running smoothly. When we eat food, our bodies break it down into sugar (<dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn>). This sugar then goes into the powerhouse of our cells called <dfn title="Mitochondria are membrane-bound cell organelles (mitochondrion, singular) that generate most of the chemical energy needed to power the cell's biochemical reactions.">mitochondria</dfn>. Inside the <dfn title="Mitochondria are membrane-bound cell organelles (mitochondrion, singular) that generate most of the chemical energy needed to power the cell's biochemical reactions.">mitochondria</dfn>, the sugar combines with the oxygen we breathe in to create energy in the form of <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn>.</p>
+                    </div>
+                    <div id="respOverAnim" class="flexCol" style="width: 50%">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                        <dotlottie-player src="https://lottie.host/a71fe9e7-6847-4f3e-8416-9f43df4e4359/PmfwRuKsoJ.json" background="transparent" speed="1" style="width: 37.5rem; height: 37.5rem;" loop autoplay></dotlottie-player>
+                    </div>
+                </div>
+            </div>
+            <!--respiration overview-->
+
+            <!--respiration equation-->
+            <div id="respEq" style="margin: 50px; padding: 50px; background-color: cornsilk; border: 5px solid rgb(0, 0, 42); border-radius: 1.25rem;">
+                <div id="respEqTitle" class="flexRow" style="font-size: 1.875rem; font-weight: bolder; justify-content: end; margin-bottom: 3.125rem;">
+                    <p style="color: rgb(0, 0, 42);">Equation:</p>
+                </div>
+                <div id="respEqCont" class="flexRow">
+                    <div id="respEqExp" class="flexCol" style="width: 50%; font-size: 2.8rem; position: relative;">
+                        <img src="https://lh3.googleusercontent.com/proxy/on_Cx1DK4C-m5htrsS-4C6vUTbGMRSES2Nrw5nJ9KgOFAWc1-xMeZnCWhjAR_meHg3zzLbJjz-JqN-BSDMsDTR9wLL5wfSFs0alnCkdXldSSM9C64qNLFgMhxEc4MGEmakGLfoc2fyA" style="width: 30rem; height: 7rem; position: absolute; left: 0; top: 0; ">
+                    </div>
+                    <div id="respEqText" class="flexCol" style="width: 50%; font-size: 1.25rem; line-height: 2rem;">
+                        <p style="color: rgb(0, 0, 42);">The respiration equation is located on the left.<br><br>Notice that the inputs of this equation where the outputs of the last equation. How cool is that! We previously talked about how plants make <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn> but we haven't yet talked about what they do with it once it's made. This section will explain how plants and humans make energy within their cells.</p>
+                    </div>
+                </div>
+            </div>
+            <!--respiration equation-->
+
+            <!--glycolosis-->
+            <div id="glycolosis">
+                <div id="glycTitle" class="flexRow" style="font-size: 4.7rem; font-weight: bolder;">
+                    <p style="color: rgb(0, 0, 42);">.1 Glycolysis</p>
+                </div>
+                <div id="glycCont" class="flexRow">
+                    <div id="glycAnim" class="flexCol" style="width: 50%; margin: 3.125rem; padding: 3.125rem;">
+                        <img src="https://facts.net/wp-content/uploads/2023/09/19-unbelievable-facts-about-glycolysis-1693591622.jpg" style="width: 37.5rem; height: 22rem;">
+                    </div>
+                    <div id="glycText" class="flexCol" style="width: 50%; font-size: 1.25rem; line-height: 2rem; border: 5px solid rgb(0, 0, 42); border-radius: 1.25rem; margin: 3.125rem; padding: 3.125rem; background-color: cornsilk;">
+                        <p style="color: rgb(0, 0, 42);">There are three steps in the process of cellular respiration:<br><br><ul><li style="color: rgb(0, 0, 42);">Glycolysis</li><li style="color: rgb(0, 0, 42)">Krebs Cycle</li><li style="color:rgb(0, 0, 42)">Electron Transport Chain</li></ul><br><br><p style="color: rgb(0, 0, 42);">For now, let's discuss glycolysis. Glycolysis is the first step in the process of cellular respiration. It occurs in the <dfn title="Cytoplasm is the gelatinous liquid that fills the inside of a cell">cytoplasm</dfn> of the cell. The process takes <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn> and converts it into a more useful form called <dfn title="The output of the metabolism of glucose known as glycolysis">pyruvic</dfn>. In addition to <dfn title="The output of the metabolism of glucose known as glycolysis">pyruvic</dfn>, 4 <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn> molecules and 2 <dfn title="Nicotinamide adenine dinucleotide (NADH) is a coenzyme central to metabolism. consists of two nucleotides joined through their phosphate groups.">NADH</dfn> are also produced as products of glycolysis.<br><br>Shortly after, the two <dfn title="The output of the metabolism of glucose known as glycolysis">pyruvic</dfn> are transported into the <dfn title="In the mitochondria, the matrix is the space within the inner membrane">mitochondrial matrix</dfn> where they become <dfn title="Combine or become combined chemically with oxygen.">oxidized</dfn>. There, they will be converted from <dfn title="The output of the metabolism of glucose known as glycolysis">pyrivic</dfn> to <dfn title="A metabolite derived from glucose, fatty acid, and amino acid catabolism">acetyl CoA</dfn>. It's important to note that carbon dioxide is also released and passed on to the next step...</p></p>
+
+                    </div>
+                </div>
+            </div>
+            <!--glycolosis-->
+
+            <!--Krebs Cycle-->
+            <div id="krebs">
+                <div id="krebsTitle" class="flexRow" style="font-size: 4.7rem; font-weight: bolder;">
+                    <p style="color: rgb(0, 0, 42);">.2 The Krebs Cycle</p>
+                </div>
+                <div id="krebsCont" class="flexRow">
+                    <div id="krebsText" class="flexCol" style="width: 50%; font-size: 1.25rem; line-height: 2rem; margin: 3.125rem; padding: 3.125rem; background-color: cornsilk; border: 5px solid rgb(0, 0, 42); border-radius: 1.25rem;">
+                        <p style="color: rgb(0, 0, 42);">The Krebs cycle ( also known as the "Citric Acid Cycle" ) is a closed-loop process that occurs in the <dfn title="In the mitochondria, the matrix is the space within the inner membrane">mitochondrial matrix</dfn>. It is quite complicated so here is a simple rundown:<br><br><ol><li style="color:rgb(0, 0, 42);">The <dfn title="A metabolite derived from glucose, fatty acid, and amino acid catabolism">acetyl CoA</dfn> from the previous step enters the cycle</li><li style="color: rgb(0, 0, 42);">The outputs include: 2 <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn>, 6 <dfn title="Nicotinamide adenine dinucleotide (NADH) is a coenzyme central to metabolism. consists of two nucleotides joined through their phosphate groups.">NADH</dfn>, and 2 <dfn title="Flavin adenine dinucleotide (FADH) is a redox-active coenzyme associated with various proteins, which is involved with several enzymatic reactions in metabolism.">FADH</dfn></li></ol></p>
+                    </div>
+                    <div id="krebsAnim" class="FlexCol" style="width: 50%;">
+                        <img src="https://d20khd7ddkh5ls.cloudfront.net/citric_acid_cycle_krebs.png" style="width:37.5rem; height: 30rem;">
+                    </div>
+                </div>
+            </div>
+            <!--Krebs Cycle-->
+
+            <!--electron transport chain-->
+            <div id="etc">
+                <div id="etcTitle" class="flexRow" style="font-size: 4.7rem; font-weight: bolder;">
+                    <p style="color: rgb(0, 0, 42);">.3 Electron Transport Chain</p>
+                </div>
+                <div id="etcCont" class="flexRow">
+                    <div id="etcAnim" class="flexCol" style="width: 50%;">
+                        <img src="https://ncert-neetprep.s3.ap-south-1.amazonaws.com/XI/Biology/kebo114/OEBPS/Images/fig_14.4_%282%29.png" style="width: 30rem; height: 50rem; outline: 5px solid white; outline-offset: -5px;">
+                    </div>
+                    <div id="etcText" class="flexCol" style="width: 50%; font-size: 1.25rem; line-height: 2rem; margin: 3.125rem; padding: 3.125rem; background-color: cornsilk; border: 5px solid rgb(0, 0, 42); border-radius: 1.25rem;">
+                        <p style="color: rgb(0, 0, 42);">The electron transport chain is the last step in the process of cellular respiration. This step takes place in the <dfn title="The active site for the electron transport chain and ATP production.">inner mitochondrial membrane</dfn>. It's important to note that this step is very complex and we are greatly simplifying it.<br><br>Here's the rundown:<br><br><ul><li style="margin: 2rem 5rem 2rem 5rem; color: rgb(0, 0, 42);">electrons are transferred from the <dfn title="Nicotinamide adenine dinucleotide (NADH) is a coenzyme central to metabolism. consists of two nucleotides joined through their phosphate groups.">NADH</dfn> and the <dfn title="Flavin adenine dinucleotide (FADH) is a redox-active coenzyme associated with various proteins, which is involved with several enzymatic reactions in metabolism.">FADH</dfn> to protein carriers</li><li style="margin: 2rem 5rem 2rem 5rem; color: rgb(0, 0, 42);">These electrons create a <dfn title="Occurs when the concentration of one molecule is higher on one side compared to the other side of the plasma membrane.">gradient</dfn> that pumps hydrogen atoms up into the outer mitochondrial membrane ( intermembrane space )</li><li style="margin: 2rem 5rem 2rem 5rem; color:rgb(0, 0, 42);">The surplus of protons in the outer membrane space is forced back down into the <dfn title="The active site for the electron transport chain and ATP production.">inner membrane space</dfn> through a channel protein called <dfn title="An enzyme that synthesizes adenosine triphosphate (ATP) in the mitochondrial inner membrane.">ATP synthase</dfn>. This process creates an abundance of <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP!</dfn></li><li style="margin: 2rem 5rem 2rem 5rem; color: rgb(0, 0, 42);">The electron from earlier eventually makes its way through the protein carriers and bonds with hydrogen atoms to make water.</li></ul></p>
+                    </div>
+                </div>
+            </div>
+            <!--electron transport chain-->
+
+        </div>
+        <!--resperation section-->
+
+        <!--full summary-->
+        <div style="background-color: rgb(0, 0, 42); padding: 3.125rem 0 3.125rem 0;">
+        <div id="fullSumm" class="flexCol" style="border: 5px solid white; border-radius: 1.25rem; margin: 0 3.125rem 0 3.125rem; padding: 3.125rem; background-color: cornsilk;">
+            <div id="fullSummTitle" style="font-size: 4.7rem; font-weight: bolder; margin: 3.125rem 0 3.125rem 0;">
+                <p style="color: rgb(0, 0, 42);">Guide Complete!</p>
+            </div>
+            <div id="fullSummMsg" style="font-size: 1.875rem; font-weight: bolder; text-align: center; margin: 0 5rem 1.25rem 5rem">
+                <p style="color: rgb(0, 0, 42);">Congratulations, you've completed this guide! Here is a quick summary of what you just learned:</p>
+            </div>
+            <div id="fullSummCont" class="flexRow" style="width: 100%;">
+                <div id="fullSummPhto" style="width: 50%; margin: 1.25rem; padding: 3.125rem; border: 5px solid rgb(0, 0, 42); background-color: cornsilk; border-radius: 1.25rem;">
+                    <p style="font-size: 1.875rem; text-align: center; font-weight: bolder;">Photosynthesis</p>
+                    <ul style="font-size: 1.25rem;">
+                        <li style="margin: 2rem 5rem 2rem 5rem;">Photosynthesis allows plants to create their own food</li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">The photosynthesis equation is: carbon dioxide + water = <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn> and oxygen</li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">The light reaction is the first step in photosynthesis. It occurs in the <dfn title="The thylakoid membrane of a chloroplast is an internal system of interconnected membranes, that carry out the light reactions of photosynthesis">thylakoid membrane</dfn>. Light and water are taken in, <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn> and <dfn title="Nicotinamide adenine dinucleotide phosphate (NADPH) is an essential electron donor in all organisms, and provides the reducing power for anabolic reactions and redox balance.">NADPH</dfn> are produced.</li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">The light independent reaction occurs in the <dfn title="The cells and tissues that support and give structure to organs, glands, or other tissues in the body">stroma</dfn> of the <dfn title="A plastid that contains chlorophyll and in which photosynthesis takes place.">chloroplast</dfn>. Carbon dioxide is taken in through the pores. The <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn>, <dfn title="Nicotinamide adenine dinucleotide (NADH) is a coenzyme central to metabolism. consists of two nucleotides joined through their phosphate groups.">NADH</dfn>, and Co2 are converted into <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn></li>
+                    </ul>
+                </div>
+                <div id="fullSummRes" style="width: 50%; margin: 1.25rem; padding: 3.125rem; border: 5px solid rgb(0, 0, 42); background-color: cornsilk; border-radius: 1.25rem;">
+                    <p style="font-size: 1.875rem; text-align: center; font-weight: bolder;">Respiration</p>
+                    <ul style="font-size: 20px;">
+                        <li style="margin: 2rem 5rem 2rem 5rem;">Respiration is a cellular process that produces energy in the form of <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn></li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">The cellular respiration equation is: <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">Glucose</dfn> + Oxygen = Carbon Dioxide and Water</li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">Glycolysis is the first step in respiration. It takes a <dfn title="Glucose is a sugar with the molecular formula C₆H₁₂O₆">glucose</dfn> molecule and converts it into 2 <dfn title="The output of the metabolism of glucose known as glycolysis">pyruvic</dfn></li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">There is an intermediate step between glycolysis and the Krebs cycle. In this step, the 2 <dfn title="The output of the metabolism of glucose known as glycolysis">pyruvic</dfn> are converted into <dfn title="A metabolite derived from glucose, fatty acid, and amino acid catabolism">acetyl CoA,</dfn> and oxygen is also released.</li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">The Krebs cycle takes the outputs of the previous step and produces 2 <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn>, 6 <dfn title="Nicotinamide adenine dinucleotide (NADH) is a coenzyme central to metabolism. consists of two nucleotides joined through their phosphate groups.">NADH</dfn>, and 2 <dfn title="Flavin adenine dinucleotide (FADH) is a redox-active coenzyme associated with various proteins, which is involved with several enzymatic reactions in metabolism.">FADH.</dfn></li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">The electron transport chain is the last step in cellular respiration. First, electrons are transported from the <dfn title="Nicotinamide adenine dinucleotide (NADH) is a coenzyme central to metabolism. consists of two nucleotides joined through their phosphate groups.">NADH</dfn> and <dfn title="Flavin adenine dinucleotide (FADH) is a redox-active coenzyme associated with various proteins, which is involved with several enzymatic reactions in metabolism.">FADH</dfn> to protein carriers.</li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">Next hydrogen atoms are pumped from the <dfn title="In the mitochondria, the matrix is the space within the inner membrane">mitochondrial matrix</dfn> to the inner membrane space and then back through <dfn title="An enzyme that synthesizes adenosine triphosphate (ATP) in the mitochondrial inner membrane.">ATP synthase</dfn> to produce <dfn title="Adenosine triphosphate (ATP) is the source of energy for use and storage at the cellular level">ATP</dfn> energy.</li>
+                        <li style="margin: 2rem 5rem 2rem 5rem;">Finally, the electrons make their way through the carrier proteins and bond with hydrogen atoms to create water.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--full summary-->
+
+    </div>
+    <!-- main guide content-->
+
+    <!--sources-->
+    <div id="sources" style="margin: 3.125rem; padding: 3.125rem; background-color: cornsilk; border: 5px solid rgb(0, 0, 42); border-radius: 1.25rem;">
+        <div id="sourcesTitle" class="flexRow" style="font-size: 4.7rem; font-weight: bolder; margin: 0 0 3.125rem 0">
+            <p style="color:rgb(0, 0, 42);">Sources</p>
+        </div>
+        <div id="sourcesScroll" class="flexRow" style="gap: 1rem;">
+            <div class="srcScroller flexCol" style="width: 12.5rem; height: 12.5rem; border: 3px solid rgb(0, 0, 42); border-radius: 1rem;"><p><b><a href="https://lottiefiles.com/" style="text-decoration: none;">Lottie Files</a></b></p></div>
+            <div class="srcScroller flexCol" style="width: 12.5rem; height: 12.5rem; border: 3px solid rgb(0, 0, 42); border-radius: 1rem;"><p><b><a href="https://www.youtube.com/@AmoebaSisters" style="text-decoration: none;">Amobea Sisters</a></b></p></div>
+            <div class="srcScroller flexCol" style="width: 12.5rem; height: 12.5rem; border: 3px solid rgb(0, 0, 42); border-radius: 1rem;"><p><b><a href="https://www.expii.com/" style="text-decoration: none;">Expii.com</a></b></p></div>
+            <div class="srcScroller flexCol" style="width: 12.5rem; height: 12.5rem; border: 3px solid rgb(0, 0, 42); border-radius: 1rem;"><p><b><a href="https://www.expii.com/" style="text-decoration: none;">TinyTap.com</a></b></p></div>
+            <div class="srcScroller flexCol" style="width: 12.5rem; height: 12.5rem; border: 3px solid rgb(0, 0, 42); border-radius: 1rem;"><p><b><a href="https://facts.net/" style="text-decoration: none;">Facts.net</a></b></p></div>
+            <div class="srcScroller flexCol" style="width: 12.5rem; height: 12.5rem; border: 3px solid rgb(0, 0, 42); border-radius: 1rem;"><p><b><a href="https://www.neetprep.com/" style="text-decoration: none;">NeetPrep.com</a></b></p></div>
+        </div>
+    </div>
+    <!--sources-->
+
+    <!--faux footer-->
+    <style>#siteInfo li {color: rgb(0, 0, 42);}</style>
+    <div id="fauxFooter" style="border: 5px solid paleturquoise; border-radius: 1.25rem; margin: 3.125rem; padding: 3.125rem; background-color: rgb(0, 0, 42);">
+        <div id="fauxFooterTitle" class="flexRow" style="font-size: 4rem; font-weight: bolder; margin: 0 0 3.125rem 0;">
+            <p style="color: cornsilk;">Interested in how this was made?</p>
+        </div>
+            <div id="fauxFooterCont" class="flexRow">
+                <div id="siteInfo" class="flexCol" style="width: 50%; font-size: 1.2rem; line-height: 2rem; border: 5px solid paleturquoise; border-radius: 1.25rem; padding: 1.25rem; background-color: cornsilk;">
+                    <p style="font-size: 1.875rem; font-weight: bolder; margin: 2rem 0 2rem 0; color: rgb(0, 0, 42);">Stats for nerds</p>
+                    <p>
+                        <ul>
+                            <li><b>Zero</b> source control</li>
+                            <li><b>Zero</b> libraries</li>
+                            <li><b>Zero</b> frameworks</li>
+                            <li>VS Code <b>Web</b></li>
+                            <li><b>Completly developed on a school chromebook</b></li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="gitHubLink" class="flexCol" style="width: 50%; line-height: 2rem;">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/05f57722-abaf-43f6-a190-567e52074bcc/5lEHxc5Wqe.json" background="transparent" speed="1" style="width: 12.2rem; height: 12.2rem;" loop autoplay></dotlottie-player>
+                    <p style="font-size: 1.857rem; font-weight: bolder; color: cornsilk;">View the GitHub repo</p>
+                    <p style="font-size: 1.25rem; color: cornsilk;">View or download the source code <a href="https://www.github.com/jonterrence" style="color: paleturquoise; text-decoration: none;">here!</a></p>
+                </div>
+            </div>
+    </div>
+    <!--faux footer-->
+
+    <!--END OF BODY-->
+</body>
+</html>
+
